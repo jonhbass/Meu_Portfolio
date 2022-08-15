@@ -144,9 +144,9 @@ setTimeout(function () {
 					// Unlock.
 setTimeout(function () {
 	locked = false;
-		}, delay);
+	}, delay);
 
-		}, 25);
+	}, 25);
 
 	}, delay);
 
