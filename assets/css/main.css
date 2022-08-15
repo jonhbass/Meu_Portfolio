@@ -37,10 +37,10 @@ blockquote, q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
-	}
+}
 
 table {
 	border-collapse: collapse;
@@ -70,62 +70,62 @@ input, select, textarea {
 
 /* Basic */
 
-	@-ms-viewport {
-		width: device-width;
+@-ms-viewport {
+	width: device-width;
+}
+
+@media screen and (max-width: 480px) {
+
+html, body {
+	min-width: 320px;
 	}
 
-	@media screen and (max-width: 480px) {
+}
 
-		html, body {
-			min-width: 320px;
-		}
-
-	}
-
-	html {
+html {
 		box-sizing: border-box;
-	}
+}
 
 	*, *:before, *:after {
 		box-sizing: inherit;
-	}
+}
 
-	body {
+body {
 		background: #1b1f22;
-	}
+}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
 
 /* Type */
 
-	html {
+html {
 		font-size: 16pt;
+}
+
+@media screen and (max-width: 1680px) {
+
+html {
+		font-size: 12pt;
+		}
+
+}
+
+@media screen and (max-width: 736px) {
+
+html {
+	font-size: 11pt;
 	}
 
-		@media screen and (max-width: 1680px) {
-
-			html {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			html {
-				font-size: 11pt;
-			}
-
-		}
+}
 
 		@media screen and (max-width: 360px) {
 
@@ -847,7 +847,7 @@ input, select, textarea {
 		flex-direction: column;
 		margin-left: 0;
 		width: 100% !important;
-	}
+}
 
 	ul.actions:not(.fixed) li {
 		-moz-flex-grow: 1;
@@ -861,15 +861,15 @@ input, select, textarea {
 		padding: 1rem 0 0 0;
 		text-align: center;
 		width: 100%;
-	}
+}
 
 	ul.actions:not(.fixed) li > * {
 		width: 100%;
-	}
+}
 
 	ul.actions:not(.fixed) li:first-child {
 		padding-top: 0;
-	}
+}
 
 	ul.actions:not(.fixed) li input[type="submit"],
 	ul.actions:not(.fixed) li input[type="reset"],
@@ -877,7 +877,7 @@ input, select, textarea {
 	ul.actions:not(.fixed) li button,
 	ul.actions:not(.fixed) li .button {
 		width: 100%;
-	}
+}
 
 	ul.actions:not(.fixed) li input[type="submit"].icon:before,
 	ul.actions:not(.fixed) li input[type="reset"].icon:before,
@@ -885,9 +885,9 @@ input, select, textarea {
 	ul.actions:not(.fixed) li button.icon:before,
 	ul.actions:not(.fixed) li .button.icon:before {
 		margin-left: -0.5em;
-	}
+}
 
-	}
+}
 
 /* Icons */
 
@@ -895,16 +895,16 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
-	}
+}
 
 	ul.icons li {
 		display: inline-block;
 		padding: 0 0.75em 0 0;
-	}
+}
 
 	ul.icons li:last-child {
 		padding-right: 0;
-	}
+}
 
 	ul.icons li a {
 		border-radius: 100%;
@@ -914,41 +914,41 @@ input, select, textarea {
 		line-height: 2.25rem;
 		text-align: center;
 		width: 2.25rem;
-	}
+}
 
 	ul.icons li a:hover {
 		background-color: rgba(255, 255, 255, 0.075);
-	}
+}
 
 	ul.icons li a:active {
 		background-color: rgba(255, 255, 255, 0.175);
-	}
+}
 
 /* Table */
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
-	}
+}
 
 	table {
 		margin: 0 0 2rem 0;
 		width: 100%;
-	}
+}
 
 	table tbody tr {
 		border: solid 1px #ffffff;
 		border-left: 0;
 		border-right: 0;
-	}
+}
 
 	table tbody tr:nth-child(2n + 1) {
 		background-color: rgba(255, 255, 255, 0.075);
-	}
+}
 
 	table td {
 		padding: 0.75em 0.75em;
-	}
+}
 
 	table th {
 		color: #ffffff;
@@ -956,7 +956,7 @@ input, select, textarea {
 		font-weight: 600;
 		padding: 0 0.75em 0.75em 0.75em;
 		text-align: left;
-	}
+}
 
 	table thead {
 		border-bottom: solid 2px #ffffff;
